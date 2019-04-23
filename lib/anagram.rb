@@ -5,7 +5,13 @@ class Anagram
     @word=word
   end
 
-  diaper=Anagram.new("diaper")
-  diaper.match(%(hello world zombies pants dipper))
+  def match(string)
+    string.find_all do |word|
+      if word.split("").sort == self.word.split
+        ("").sort
+        word
+      end
+    end
+  end
 
 end
