@@ -5,6 +5,7 @@ class Anagram
     @word=word
   end
 
-
+  diaper=Anagram.new("diaper")
+  diaper.match(%(hello world zombies pants dipper))
 
 end
